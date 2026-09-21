@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rea Salve | Virtual Assistant & Canva Creator</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #27272a;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #7c3aed;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #7c3aed;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      padding: 80px 8%;
+      background: linear-gradient(135deg, #f5f3ff, #faf5ff);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h3 {
+      color: #7c3aed;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h1 {
+      font-size: 55px;
+      line-height: 1.15;
+      color: #2e1065;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #7c3aed;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .button:hover {
+      background: #6d28d9;
+    }
+
+    .outline-button {
+      background: transparent;
+      color: #7c3aed;
+      border: 2px solid #7c3aed;
+    }
+
+    .outline-button:hover {
+      background: #7c3aed;
+      color: white;
+    }
+
+    /* PROFILE PHOTO */
+
+    .profile {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      background: #ddd6fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 8px solid white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* GENERAL SECTIONS */
+
+    .section {
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 38px;
+      color: #2e1065;
+      margin-bottom: 45px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 290px;
+      padding: 35px 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #7c3aed;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #faf7ff;
+    }
+
+    .about-content {
+      max-width: 750px;
+      margin: auto;
+      color: #555;
+      font-size: 17px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-card {
+      width: 300px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .portfolio-image {
+      height: 190px;
+      background: linear-gradient(135deg, #ddd6fe, #f5d0fe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+    }
+
+    .portfolio-card h3 {
+      padding: 20px 20px 5px;
+      color: #2e1065;
+    }
+
+    .portfolio-card p {
+      padding: 0 20px 20px;
+      color: #666;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #7c3aed;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      margin-bottom: 25px;
+    }
+
+    .contact .button {
+      background: white;
+      color: #7c3aed;
+    }
+
+    /* SOCIAL LINKS */
+
+    .social {
+      margin-top: 25px;
+    }
+
+    .social a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #18181b;
+      color: white;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 70px 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 40px;
+      }
+
+      .profile {
+        width: 250px;
+        height: 250px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="logo">
+    Rea Salve Pequit
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h3>Virtual Assistant • Canva Creator</h3>
+
+    <h1>
+      Helping Businesses Save Time & Look Professional
+    </h1>
+
+    <p>
+      I help entrepreneurs and small businesses stay organized,
+      manage their tasks, and create beautiful content using Canva.
+    </p>
+
+    <a href="#contact" class="button">
+      Hire Me
+    </a>
+
+    <a href="#portfolio" class="button outline-button">
+      View My Work
+    </a>
+
+  </div>
+
+
+  <!-- PROFILE PHOTO -->
+
+  <div class="profile">
+
+    <img src="profile.jpg" alt="Your Name">
+
+  </div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+  <h2>What I Can Do For You</h2>
+
+  <div class="services">
+
+
+    <div class="card">
+
+      <div class="icon">💻</div>
+
+      <h3>Virtual Assistance</h3>
+
+      <p>
+        Email management, data entry, research,
+        scheduling, file organization, and administrative support.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="icon">🎨</div>
+
+      <h3>Canva Design</h3>
+
+      <p>
+        Social media graphics, presentations,
+        flyers, worksheets, and branded content.
+      </p>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="icon">📱</div>
+
+      <h3>Social Media Support</h3>
+
+      <p>
+        Content creation, captions, scheduling,
+        and basic social media management.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- PORTFOLIO -->
+
+<section class="section" id="portfolio">
+
+  <h2>My Canva Portfolio</h2>
+
+  <p style="max-width: 650px; margin: -25px auto 40px; color: #666;">
+    Here are some of my Canva designs and creative projects.
+  </p>
+
+  <div class="portfolio">
+
+    <div class="portfolio-card">
+
+      <div class="portfolio-image">
+        <img
+          src="canva1.jpg"
+          alt="Canva Social Media Design"
+          style="width:100%; height:190px; object-fit:cover;"
+        >
+      </div>
+
+      <h3>Social Media Design</h3>
+
+      <p>
+        Creative and engaging social media graphics
+        designed using Canva.
+      </p>
+
+    </div>
+
+
+    <div class="portfolio-card">
+
+      <div class="portfolio-image">
+        <img
+          src="canva2.jpg"
+          alt="Canva Business Design"
+          style="width:100%; height:190px; object-fit:cover;"
+        >
+      </div>
+
+      <h3>Business Design</h3>
+
+      <p>
+        Professional visual materials created
+        for business and marketing purposes.
+      </p>
+
+    </div>
+
+
+    <div class="portfolio-card">
+
+      <div class="portfolio-image">
+        <img
+          src="canva3.jpg"
+          alt="Canva Marketing Design"
+          style="width:100%; height:190px; object-fit:cover;"
+        >
+      </div>
+
+      <h3>Marketing Materials</h3>
+
+      <p>
+        Eye-catching flyers, promotional graphics,
+        and other marketing materials.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+  <h2>About Me</h2>
+
+  <div class="about-content">
+
+    <p>
+
+      Hi! I'm <strong>Rea Salve Pequit</strong>, a Virtual Assistant
+      and Canva Creator.
+
+      I enjoy helping business owners save time,
+      stay organized, and create content that represents
+      their brand professionally.
+
+      I am detail-oriented, creative, and always willing
+      to learn new tools and skills.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- WHY HIRE ME -->
+
+<section class="section">
+
+  <h2>Why Hire Me?</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="icon">✅</div>
+      <h3>Reliable</h3>
+      <p>
+        I take my responsibilities seriously and aim
+        to provide dependable support for every project.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>Detail-Oriented</h3>
+      <p>
+        I pay attention to details and make sure tasks
+        are completed accurately and professionally.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💡</div>
+      <h3>Willing to Learn</h3>
+      <p>
+        I am always open to learning new tools,
+        skills, and better ways to support my clients.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TOOLS I USE -->
+
+<section class="section about">
+
+  <h2>Tools I Use</h2>
+
+  <div class="services">
+
+    <div class="card">
+      <div class="icon">🎨</div>
+      <h3>Canva</h3>
+      <p>
+        Creating social media graphics, presentations,
+        flyers, and other visual content.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📄</div>
+      <h3>Google Workspace</h3>
+      <p>
+        Google Docs, Google Sheets, Google Drive,
+        Gmail, and other productivity tools.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💻</div>
+      <h3>Microsoft Office</h3>
+      <p>
+        Microsoft Word, Excel, PowerPoint,
+        and other office productivity tools.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- CONTACT -->
+
+<section class="contact section" id="contact">
+
+  <h2>Let's Work Together</h2>
+
+  <p>
+    Have a project or need help with your business?
+    I'd love to hear from you.
+  </p>
+
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=reapequit9@gmail.com"
+    class="button">
+
+    📩 Hire Me
+
+  </a>
+<form
+  action="mailto:reapequit9@gmail.com"
+  method="post"
+  enctype="text/plain"
+  style="max-width:600px; margin:35px auto 0; text-align:left;">
+
+  <input
+    type="text"
+    name="Name"
+    placeholder="Your Name"
+    required
+    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
+
+  <input
+    type="email"
+    name="Email"
+    placeholder="Your Email"
+    required
+    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
+
+  <textarea
+    name="Message"
+    placeholder="Tell me about your project..."
+    rows="6"
+    required
+    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px; resize:vertical;"></textarea>
+
+  <button
+    type="submit"
+    class="button"
+    style="border:none; cursor:pointer;">
+
+    Send Message
+
+  </button>
+
+</form>
+
+
+
+  <div class="social">
+
+    <a href="https://www.facebook.com/pequitita22" target="_blank">
+      Facebook
+    </a>
+
+    <a href="https://linkedin.com/in/rea-salve-pequit-aa173b3a7?" target="_blank">
+      LinkedIn
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © 2026 Your Name. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+</body>
+
+</html>
