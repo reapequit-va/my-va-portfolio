@@ -90,19 +90,23 @@
     }
 
     .button {
-      display: inline-block;
-      padding: 14px 28px;
-      background: #7c3aed;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      margin-right: 10px;
-    }
+  display: inline-block;
+  padding: 14px 30px;
+  background: #7c3aed;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.25);
+}
 
-    .button:hover {
-      background: #6d28d9;
-    }
+.button:hover {
+  background: #6d28d9;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.30);
+}
 
     .outline-button {
       background: transparent;
@@ -157,15 +161,21 @@
       gap: 25px;
       flex-wrap: wrap;
     }
+.card {
+  width: 290px;
+  padding: 35px 25px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .card {
-      width: 290px;
-      padding: 35px 25px;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-    }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.18);
+}
 
+    
     .card .icon {
       font-size: 40px;
       margin-bottom: 15px;
