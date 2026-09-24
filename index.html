@@ -90,23 +90,23 @@
     }
 
     .button {
-  display: inline-block;
-  padding: 14px 30px;
-  background: #7c3aed;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  margin-right: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.25);
-}
+      display: inline-block;
+      padding: 14px 30px;
+      background: #7c3aed;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.25);
+    }
 
-.button:hover {
-  background: #6d28d9;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.30);
-}
+    .button:hover {
+      background: #6d28d9;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(124, 58, 237, 0.30);
+    }
 
     .outline-button {
       background: transparent;
@@ -161,21 +161,21 @@
       gap: 25px;
       flex-wrap: wrap;
     }
-.card {
-  width: 290px;
-  padding: 35px 25px;
-  background: white;
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.10);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.18);
-}
+    .card {
+      width: 290px;
+      padding: 35px 25px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(124, 58, 237, 0.10);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(124, 58, 237, 0.18);
+    }
+
     .card .icon {
       font-size: 40px;
       margin-bottom: 15px;
@@ -188,6 +188,76 @@
 
     .card p {
       color: #666;
+    }
+
+    /* SAMPLE WORKS */
+
+    .sample-works {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .sample-card {
+      width: 300px;
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(124, 58, 237, 0.10);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: left;
+    }
+
+    .sample-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(124, 58, 237, 0.18);
+    }
+
+    .sample-image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background: #f5f3ff;
+    }
+
+    .sample-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sample-content {
+      padding: 22px;
+    }
+
+    .sample-content h3 {
+      color: #2e1065;
+      margin-bottom: 10px;
+    }
+
+    .sample-content p {
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .sample-button {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #7c3aed;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .sample-button:hover {
+      background: #6d28d9;
+      transform: translateY(-2px);
     }
 
     /* ABOUT */
@@ -302,15 +372,18 @@
         height: 250px;
       }
 
+      .sample-card {
+        width: 100%;
+        max-width: 350px;
+      }
+
     }
 
   </style>
 
 </head>
 
-
 <body>
-
 
 <!-- HEADER -->
 
@@ -322,13 +395,13 @@
 
   <nav>
     <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#sample-works">Sample Works</a>
+    <a href="#portfolio">Canva</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 
 </header>
-
 
 
 <!-- HERO -->
@@ -340,8 +413,8 @@
     <h3>Virtual Assistant • Canva Creator</h3>
 
     <h1>
-  Your Reliable Virtual Assistant & Canva Designer
-</h1>
+      Your Reliable Virtual Assistant & Canva Designer
+    </h1>
 
     <p>
       I help entrepreneurs and small businesses stay organized,
@@ -363,12 +436,11 @@
 
   <div class="profile">
 
-    <img src="profile.jpg" alt="Your Name">
+    <img src="profile.jpg" alt="Rea Salve Pequit">
 
   </div>
 
 </section>
-
 
 
 <!-- SERVICES -->
@@ -379,7 +451,6 @@
 
   <div class="services">
 
-
     <div class="card">
 
       <div class="icon">💻</div>
@@ -387,10 +458,10 @@
       <h3>Virtual Assistance</h3>
 
       <p>
-  I provide reliable virtual assistance with data entry,
-  administrative tasks, internet research, file organization,
-  and social media support.
-</p>
+        I provide reliable virtual assistance with data entry,
+        administrative tasks, internet research, file organization,
+        and social media support.
+      </p>
 
     </div>
 
@@ -402,11 +473,10 @@
       <h3>Canva Design</h3>
 
       <p>
-  I create clean and engaging Canva designs for
-  social media posts, flyers, presentations,
-  promotional materials, and simple business graphics.
-</p>
-
+        I create clean and engaging Canva designs for
+        social media posts, flyers, presentations,
+        promotional materials, and simple business graphics.
+      </p>
 
     </div>
 
@@ -424,14 +494,169 @@
 
     </div>
 
+  </div>
+
+</section>
+
+
+<!-- SAMPLE WORKS -->
+
+<section class="section" id="sample-works">
+
+  <h2>My Sample Works</h2>
+
+  <p style="max-width: 650px; margin: -25px auto 40px; color: #666;">
+    Here are some of my virtual assistance, administrative,
+    social media, and creative sample projects.
+  </p>
+
+  <div class="sample-works">
+
+    <!-- CLIENT SPREADSHEET -->
+
+    <div class="sample-card">
+
+      <div class="sample-image">
+
+        <img
+          src="client-spreadsheet.png"
+          alt="Client Spreadsheet Sample"
+        >
+
+      </div>
+
+      <div class="sample-content">
+
+        <h3>📊 Client Spreadsheet</h3>
+
+        <p>
+          Sample business spreadsheet demonstrating
+          data organization, formatting, and accurate
+          information management.
+        </p>
+
+        <a
+          href="client-spreadsheet.png"
+          target="_blank"
+          class="sample-button">
+          View Sample →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- CALENDAR -->
+
+    <div class="sample-card">
+
+      <div class="sample-image">
+
+        <img
+          src="calendar-scheduling.png"
+          alt="Calendar Scheduling Sample"
+        >
+
+      </div>
+
+      <div class="sample-content">
+
+        <h3>📅 Calendar Scheduling</h3>
+
+        <p>
+          Sample calendar organization showing
+          appointments, tasks, meetings, and
+          scheduled activities.
+        </p>
+
+        <a
+          href="calendar-scheduling.png"
+          target="_blank"
+          class="sample-button">
+          View Sample →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- SOCIAL MEDIA CALENDAR -->
+
+    <div class="sample-card">
+
+      <div class="sample-image">
+
+        <img
+          src="social-media-calendar.png"
+          alt="Social Media Content Calendar Sample"
+        >
+
+      </div>
+
+      <div class="sample-content">
+
+        <h3>📱 Social Media Calendar</h3>
+
+        <p>
+          Sample content calendar designed to organize
+          social media posts, captions, content ideas,
+          and publishing schedules.
+        </p>
+
+        <a
+          href="social-media-calendar.png"
+          target="_blank"
+          class="sample-button">
+          View Sample →
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- CANVA MOCKUPS -->
+
+    <div class="sample-card">
+
+      <div class="sample-image">
+
+        <img
+          src="canva-mockups.png"
+          alt="Canva Mockups Sample"
+        >
+
+      </div>
+
+      <div class="sample-content">
+
+        <h3>🎨 Canva Mockups</h3>
+
+        <p>
+          Creative Canva mockups showcasing visual
+          design, presentation, and promotional
+          content creation.
+        </p>
+
+        <a
+          href="canva-mockups.png"
+          target="_blank"
+          class="sample-button">
+          View Sample →
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 
 
-
-<!-- PORTFOLIO -->
+<!-- CANVA PORTFOLIO -->
 
 <section class="section" id="portfolio">
 
@@ -446,11 +671,13 @@
     <div class="portfolio-card">
 
       <div class="portfolio-image">
+
         <img
           src="canva1.jpg"
           alt="Canva Social Media Design"
           style="width:100%; height:190px; object-fit:cover;"
         >
+
       </div>
 
       <h3>Social Media Design</h3>
@@ -466,11 +693,13 @@
     <div class="portfolio-card">
 
       <div class="portfolio-image">
+
         <img
           src="canva2.jpg"
           alt="Canva Business Design"
           style="width:100%; height:190px; object-fit:cover;"
         >
+
       </div>
 
       <h3>Business Design</h3>
@@ -486,11 +715,13 @@
     <div class="portfolio-card">
 
       <div class="portfolio-image">
+
         <img
           src="canva3.jpg"
           alt="Canva Marketing Design"
           style="width:100%; height:190px; object-fit:cover;"
         >
+
       </div>
 
       <h3>Marketing Materials</h3>
@@ -505,7 +736,6 @@
   </div>
 
 </section>
-
 
 
 <!-- ABOUT -->
@@ -534,6 +764,7 @@
 
 </section>
 
+
 <!-- WHY HIRE ME -->
 
 <section class="section">
@@ -543,36 +774,49 @@
   <div class="services">
 
     <div class="card">
+
       <div class="icon">✅</div>
+
       <h3>Reliable</h3>
+
       <p>
         I take my responsibilities seriously and aim
         to provide dependable support for every project.
       </p>
+
     </div>
 
+
     <div class="card">
+
       <div class="icon">🎯</div>
+
       <h3>Detail-Oriented</h3>
+
       <p>
         I pay attention to details and make sure tasks
         are completed accurately and professionally.
       </p>
+
     </div>
 
+
     <div class="card">
+
       <div class="icon">💡</div>
+
       <h3>Willing to Learn</h3>
+
       <p>
         I am always open to learning new tools,
         skills, and better ways to support my clients.
       </p>
+
     </div>
 
   </div>
 
 </section>
-
 
 
 <!-- TOOLS I USE -->
@@ -584,37 +828,49 @@
   <div class="services">
 
     <div class="card">
+
       <div class="icon">🎨</div>
+
       <h3>Canva</h3>
+
       <p>
         Creating social media graphics, presentations,
         flyers, and other visual content.
       </p>
+
     </div>
 
+
     <div class="card">
+
       <div class="icon">📄</div>
+
       <h3>Google Workspace</h3>
+
       <p>
         Google Docs, Google Sheets, Google Drive,
         Gmail, and other productivity tools.
       </p>
+
     </div>
 
+
     <div class="card">
+
       <div class="icon">💻</div>
+
       <h3>Microsoft Office</h3>
+
       <p>
         Microsoft Word, Excel, PowerPoint,
         and other office productivity tools.
       </p>
+
     </div>
 
   </div>
 
 </section>
-
-
 
 
 <!-- CONTACT -->
@@ -635,53 +891,58 @@
     📩 Hire Me
 
   </a>
-<form
-  action="mailto:reapequit9@gmail.com"
-  method="post"
-  enctype="text/plain"
-  style="max-width:600px; margin:35px auto 0; text-align:left;">
 
-  <input
-    type="text"
-    name="Name"
-    placeholder="Your Name"
-    required
-    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
 
-  <input
-    type="email"
-    name="Email"
-    placeholder="Your Email"
-    required
-    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
+  <form
+    action="mailto:reapequit9@gmail.com"
+    method="post"
+    enctype="text/plain"
+    style="max-width:600px; margin:35px auto 0; text-align:left;">
 
-  <textarea
-    name="Message"
-    placeholder="Tell me about your project..."
-    rows="6"
-    required
-    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px; resize:vertical;"></textarea>
+    <input
+      type="text"
+      name="Name"
+      placeholder="Your Name"
+      required
+      style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
 
-  <button
-    type="submit"
-    class="button"
-    style="border:none; cursor:pointer;">
+    <input
+      type="email"
+      name="Email"
+      placeholder="Your Email"
+      required
+      style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
 
-    Send Message
+    <textarea
+      name="Message"
+      placeholder="Tell me about your project..."
+      rows="6"
+      required
+      style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px; resize:vertical;"></textarea>
 
-  </button>
+    <button
+      type="submit"
+      class="button"
+      style="border:none; cursor:pointer;">
 
-</form>
+      Send Message
 
+    </button>
+
+  </form>
 
 
   <div class="social">
 
-    <a href="https://www.facebook.com/pequitita22" target="_blank">
+    <a
+      href="https://www.facebook.com/pequitita22"
+      target="_blank">
       Facebook
     </a>
 
-    <a href="https://linkedin.com/in/rea-salve-pequit-aa173b3a7?" target="_blank">
+    <a
+      href="https://linkedin.com/in/rea-salve-pequit-aa173b3a7?"
+      target="_blank">
       LinkedIn
     </a>
 
@@ -690,13 +951,12 @@
 </section>
 
 
-
 <!-- FOOTER -->
 
 <footer>
 
   <p>
-    © 2026 Your Name. All Rights Reserved.
+    © 2026 Rea Salve Pequit. All Rights Reserved.
   </p>
 
 </footer>
