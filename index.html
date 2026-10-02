@@ -5,16 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Rea Salve Pequit | Virtual Assistant & Digital Creative</title>
-
-  <meta name="description"
-    content="Rea Salve Pequit provides virtual assistance, administrative support, lead generation, social media support, and Canva design services for business owners and entrepreneurs.">
+  <title>Rea Salve | Virtual Assistant & Canva Creator</title>
 
   <style>
-
-    /* =========================
-       GLOBAL
-    ========================= */
 
     * {
       margin: 0;
@@ -27,430 +20,213 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #3d332c;
-      background: #f7f3ed;
-      line-height: 1.7;
+      font-family: Arial, sans-serif;
+      color: #27272a;
+      background: #ddc399;
+      line-height: 1.6;
     }
-
-    img {
-      max-width: 100%;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    /* =========================
-       BRAND COLORS
-    ========================= */
-
-    :root {
-      --cream: #f7f3ed;
-      --beige: #e7e2db;
-      --sand: #ddc399;
-      --tan: #bea282;
-      --brown: #694220;
-      --light-brown: #a77d5a;
-      --dark: #302820;
-      --text: #5f5750;
-      --white: #ffffff;
-    }
-
-    /* =========================
-       HEADER
-    ========================= */
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      padding: 18px 8%;
-
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(10px);
-
-      box-shadow: 0 2px 18px rgba(105, 66, 32, 0.08);
+      padding: 20px 8%;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     .logo {
-      color: var(--brown);
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -0.3px;
-    }
-
-    .logo span {
-      color: var(--light-brown);
-      font-weight: 500;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #694220;
     }
 
     nav a {
       margin-left: 25px;
-      color: var(--dark);
-      font-size: 14px;
-      font-weight: 600;
-      transition: 0.3s ease;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
     }
 
     nav a:hover {
-      color: var(--light-brown);
+      color: #694220;
     }
 
-    .nav-button {
-      padding: 10px 18px;
-      background: var(--brown);
-      color: white !important;
-      border-radius: 8px;
-    }
-
-    .nav-button:hover {
-      background: var(--light-brown);
-    }
-
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
-      min-height: 720px;
-
+      min-height: 650px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      gap: 70px;
-
-      padding: 90px 8%;
-
-      background:
-        radial-gradient(circle at 85% 20%, rgba(221, 195, 153, 0.55), transparent 30%),
-        linear-gradient(135deg, #f7f3ed, #e7e2db);
+      gap: 50px;
+      padding: 80px 8%;
+      background: linear-gradient(135deg, #e7e2db, #ddc399);
     }
 
     .hero-text {
-      max-width: 650px;
+      max-width: 600px;
     }
 
-    .hero-label {
-      display: inline-block;
-
-      padding: 8px 15px;
-
-      margin-bottom: 22px;
-
-      background: rgba(167, 125, 90, 0.12);
-
-      color: var(--light-brown);
-
-      border-radius: 50px;
-
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+    .hero-text h3 {
+      color: #a77d5a;
+      margin-bottom: 15px;
     }
 
     .hero-text h1 {
-      color: var(--brown);
-
-      font-size: clamp(42px, 5vw, 68px);
-
-      line-height: 1.08;
-
-      letter-spacing: -2px;
-
-      margin-bottom: 25px;
-    }
-
-    .hero-text h1 span {
-      color: var(--light-brown);
+      font-size: 55px;
+      line-height: 1.15;
+      color: #694220;
+      margin-bottom: 20px;
     }
 
     .hero-text p {
-      max-width: 600px;
-
-      color: var(--text);
-
+      color: #666;
       font-size: 18px;
-
       margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
     }
 
     .button {
       display: inline-block;
-
-      padding: 14px 26px;
-
-      background: var(--brown);
-
+      padding: 14px 30px;
+      background:#a77d5a ;
       color: white;
-
-      border-radius: 9px;
-
-      font-weight: 700;
-
-      transition: 0.3s ease;
-
-      box-shadow: 0 8px 20px rgba(105, 66, 32, 0.16);
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 18px rgba(105, 66, 32, 0.20);
     }
 
     .button:hover {
-      background: var(--light-brown);
+      background: #694220;
       transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(105, 66, 32, 0.25);
     }
 
     .outline-button {
       background: transparent;
-      color: var(--brown);
-      border: 1.5px solid var(--brown);
-      box-shadow: none;
+      color: #a77d5a;
+      border: 2px solid #a77d5a;
     }
 
     .outline-button:hover {
-      background: var(--brown);
+      background: #e7e2db;
       color: white;
     }
 
-    .hero-note {
-      margin-top: 25px;
-
-      color: #81766c;
-
-      font-size: 13px;
-    }
-
-    /* =========================
-       PROFILE
-    ========================= */
-
-    .hero-photo-wrapper {
-      position: relative;
-      flex-shrink: 0;
-    }
+    /* PROFILE PHOTO */
 
     .profile {
-      width: 360px;
-      height: 360px;
-
+      width: 330px;
+      height: 330px;
       border-radius: 50%;
-
-      background: var(--tan);
-
-      padding: 9px;
-
-      box-shadow:
-        0 25px 60px rgba(105, 66, 32, 0.18),
-        0 0 0 12px rgba(255, 255, 255, 0.55);
-
+      background: #ddd6fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
+      border: 8px solid white;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     }
 
     .profile img {
       width: 100%;
       height: 100%;
-
       object-fit: cover;
       object-position: center 35%;
-
-      border-radius: 50%;
     }
 
-    .photo-badge {
-      position: absolute;
-
-      right: -15px;
-      bottom: 25px;
-
-      background: white;
-
-      padding: 14px 18px;
-
-      border-radius: 12px;
-
-      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-
-      color: var(--brown);
-
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    /* =========================
-       GENERAL SECTIONS
-    ========================= */
+    /* GENERAL SECTIONS */
 
     .section {
-      padding: 95px 8%;
+      padding: 90px 8%;
       text-align: center;
     }
 
-    .section-heading {
-      max-width: 700px;
-      margin: 0 auto 50px;
-    }
-
-    .section-label {
-      color: var(--light-brown);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
     .section h2 {
-      color: var(--brown);
-
-      font-size: clamp(32px, 4vw, 45px);
-
-      line-height: 1.2;
-
-      margin-bottom: 15px;
+      font-size: 38px;
+      color: #694220;
+      margin-bottom: 45px;
     }
 
-    .section-heading p {
-      color: var(--text);
-      font-size: 16px;
-    }
-
-    /* =========================
-       SERVICES
-    ========================= */
+    /* SERVICES */
 
     .services {
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
+      display: flex;
+      justify-content: center;
       gap: 25px;
-
-      max-width: 1100px;
-
-      margin: auto;
+      flex-wrap: wrap;
     }
 
     .card {
+      width: 290px;
+      padding: 35px 25px;
       background: white;
-
-      padding: 35px 28px;
-
       border-radius: 18px;
-
-      border: 1px solid rgba(105, 66, 32, 0.08);
-
-      box-shadow: 0 10px 30px rgba(105, 66, 32, 0.08);
-
-      text-align: left;
-
-      transition: 0.3s ease;
+      box-shadow: 0 8px 30px rgba(105, 66, 32, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-7px);
-
-      box-shadow: 0 18px 38px rgba(105, 66, 32, 0.13);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(105, 66, 32, 0.18);
     }
 
-    .icon {
-      width: 55px;
-      height: 55px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background: var(--beige);
-
-      border-radius: 14px;
-
-      font-size: 27px;
-
-      margin-bottom: 20px;
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
     }
 
     .card h3 {
-      color: var(--brown);
-      font-size: 20px;
-      margin-bottom: 10px;
+      color: #ddc399;
+      margin-bottom: 12px;
     }
 
     .card p {
-      color: var(--text);
-      font-size: 15px;
+      color: #666;
     }
 
-    /* =========================
-       SAMPLE WORKS
-    ========================= */
-
-    .works-section {
-      background: white;
-    }
+    /* SAMPLE WORKS */
 
     .sample-works {
-      display: grid;
-
-      grid-template-columns: repeat(4, 1fr);
-
-      gap: 22px;
-
-      max-width: 1200px;
-
-      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
     }
 
     .sample-card {
-      background: var(--cream);
-
-      border-radius: 16px;
-
+      width: 300px;
+      background: white;
+      border-radius: 18px;
       overflow: hidden;
-
-      box-shadow: 0 7px 25px rgba(105, 66, 32, 0.08);
-
-      transition: 0.3s ease;
-
+      box-shadow: 0 8px 30px rgba(105, 66, 32, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: left;
     }
 
     .sample-card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 15px 35px rgba(105, 66, 32, 0.13);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(105, 66, 32, 0.18);
     }
 
     .sample-image {
       width: 100%;
-      height: 190px;
+      height: 200px;
       overflow: hidden;
-      background: var(--beige);
+      background: #e7e2db;
     }
 
     .sample-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-
-      transition: 0.4s ease;
-    }
-
-    .sample-card:hover .sample-image img {
-      transform: scale(1.04);
+      display: block;
     }
 
     .sample-content {
@@ -458,658 +234,579 @@
     }
 
     .sample-content h3 {
-      color: var(--brown);
-      font-size: 18px;
-      margin-bottom: 8px;
+      color: #694220;
+      margin-bottom: 10px;
     }
 
     .sample-content p {
-      color: var(--text);
-      font-size: 14px;
-      margin-bottom: 17px;
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 18px;
     }
 
     .sample-button {
       display: inline-block;
-
-      padding: 9px 15px;
-
-      background: var(--brown);
-
+      padding: 10px 18px;
+      background: #a77d5a;
       color: white;
-
-      border-radius: 7px;
-
-      font-size: 13px;
-
-      font-weight: 700;
-
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
       transition: 0.3s ease;
     }
 
     .sample-button:hover {
-      background: var(--light-brown);
+      background: #694220;
+      transform: translateY(-2px);
     }
 
-    /* =========================
-       CANVA PORTFOLIO
-    ========================= */
+    /* ABOUT */
+
+    .about {
+      background: #faf7ff;
+    }
+
+    .about-content {
+      max-width: 750px;
+      margin: auto;
+      color: #555;
+      font-size: 17px;
+    }
+
+    /* PORTFOLIO */
 
     .portfolio {
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
+      display: flex;
+      justify-content: center;
       gap: 25px;
-
-      max-width: 1000px;
-
-      margin: auto;
+      flex-wrap: wrap;
     }
 
     .portfolio-card {
+      width: 300px;
       background: white;
-
-      border-radius: 16px;
-
+      border-radius: 15px;
       overflow: hidden;
-
-      box-shadow: 0 8px 25px rgba(105, 66, 32, 0.08);
-
-      text-align: left;
-
-      transition: 0.3s ease;
-    }
-
-    .portfolio-card:hover {
-      transform: translateY(-7px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
     .portfolio-image {
-      height: 230px;
-      background: var(--beige);
-      overflow: hidden;
-    }
-
-    .portfolio-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-      transition: 0.4s ease;
-    }
-
-    .portfolio-card:hover img {
-      transform: scale(1.04);
+      height: 190px;
+      background: linear-gradient(135deg, #ddd6fe, #f5d0fe);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
     }
 
     .portfolio-card h3 {
       padding: 20px 20px 5px;
-      color: var(--brown);
+      color: #694220;
     }
 
     .portfolio-card p {
-      padding: 0 20px 22px;
-      color: var(--text);
-      font-size: 14px;
+      padding: 0 20px 20px;
+      color: #666;
     }
 
-    /* =========================
-       ABOUT
-    ========================= */
+    /* CONTACT */
 
-    .about {
-      background: var(--beige);
-    }
-
-    .about-content {
-      max-width: 850px;
-
-      margin: auto;
-
-      color: var(--text);
-
-      font-size: 17px;
-    }
-
-    .about-content strong {
-      color: var(--brown);
-    }
-
-    .about-highlight {
-      margin-top: 25px;
-
-      padding: 22px;
-
-      background: rgba(255,255,255,0.7);
-
-      border-left: 4px solid var(--light-brown);
-
-      border-radius: 10px;
-
-      color: var(--brown);
-
-      font-weight: 700;
-    }
-
-    /* =========================
-       WHY HIRE
-    ========================= */
-
-    .why-section {
-      background: #fff;
-    }
-
-    /* =========================
-       TOOLS
-    ========================= */
-
-    .tools {
-      display: flex;
-
-      justify-content: center;
-
-      flex-wrap: wrap;
-
-      gap: 12px;
-
-      max-width: 900px;
-
-      margin: auto;
-    }
-
-    .tool {
-      padding: 12px 20px;
-
-      background: white;
-
-      border: 1px solid rgba(105, 66, 32, 0.12);
-
-      border-radius: 50px;
-
-      color: var(--brown);
-
-      font-weight: 700;
-
-      font-size: 14px;
-
-      box-shadow: 0 5px 15px rgba(105, 66, 32, 0.05);
-
-      transition: 0.3s ease;
-    }
-
-    .tool:hover {
-      background: var(--brown);
+    .contact {
+      background: #ddc399;
       color: white;
-      transform: translateY(-2px);
     }
 
-    /* =========================
-       CTA
-    ========================= */
-
-    .cta {
-      padding: 90px 8%;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--brown),
-          #815b3d
-        );
-
+    .contact h2 {
       color: white;
-
-      text-align: center;
     }
 
-    .cta h2 {
-      color: white;
-
-      font-size: clamp(32px, 4vw, 46px);
-
-      margin-bottom: 15px;
+    .contact p {
+      margin-bottom: 25px;
     }
 
-    .cta p {
-      max-width: 650px;
-
-      margin: 0 auto 30px;
-
-      color: rgba(255,255,255,0.86);
-    }
-
-    .cta .button {
+    .contact .button {
       background: white;
-      color: var(--brown);
+      color: #694220;
     }
 
-    .cta .button:hover {
-      background: var(--beige);
-    }
-
-    /* =========================
-       CONTACT
-    ========================= */
-
-    .contact-area {
-      max-width: 650px;
-      margin: auto;
-    }
-
-    form {
-      margin-top: 35px;
-      text-align: left;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-
-      padding: 15px;
-
-      margin-bottom: 15px;
-
-      border: 1px solid #ddd4c9;
-
-      border-radius: 9px;
-
-      background: white;
-
-      font-family: inherit;
-
-      font-size: 14px;
-
-      outline: none;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: var(--light-brown);
-    }
-
-    textarea {
-      resize: vertical;
-    }
-
-    form button {
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-    }
-
-    /* =========================
-       SOCIAL
-    ========================= */
+    /* SOCIAL LINKS */
 
     .social {
-      margin-top: 30px;
-
-      display: flex;
-
-      justify-content: center;
-
-      gap: 12px;
+      margin-top: 25px;
     }
 
     .social a {
-      padding: 9px 16px;
-
-      border: 1px solid rgba(255,255,255,0.5);
-
-      border-radius: 50px;
-
       color: white;
-
-      font-size: 13px;
-
-      font-weight: 700;
-
-      transition: 0.3s ease;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
     }
-
-    .social a:hover {
-      background: white;
-      color: var(--brown);
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
 
     footer {
-      padding: 25px;
-
-      background: #302820;
-
-      color: rgba(255,255,255,0.7);
-
       text-align: center;
-
-      font-size: 13px;
+      padding: 25px;
+      background: #18181b;
+      color: white;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 1000px) {
-
-      .services {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .sample-works {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .portfolio {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero {
-        gap: 40px;
-      }
-
-      .profile {
-        width: 310px;
-        height: 310px;
-      }
-
-    }
+    /* MOBILE */
 
     @media (max-width: 800px) {
-
-      header {
-        padding: 16px 5%;
-      }
-
-      .logo {
-        font-size: 18px;
-      }
 
       nav {
         display: none;
       }
 
       .hero {
-        min-height: auto;
-
         flex-direction: column-reverse;
-
         text-align: center;
-
-        padding: 70px 6%;
-      }
-
-      .hero-text {
-        max-width: 650px;
+        padding: 70px 20px;
       }
 
       .hero-text h1 {
-        font-size: 42px;
-        letter-spacing: -1px;
-      }
-
-      .hero-text p {
-        font-size: 16px;
-      }
-
-      .hero-buttons {
-        justify-content: center;
+        font-size: 40px;
       }
 
       .profile {
-        width: 270px;
-        height: 270px;
+        width: 250px;
+        height: 250px;
       }
 
-      .photo-badge {
-        right: -5px;
-        bottom: 10px;
-      }
-
-      .section {
-        padding: 70px 6%;
-      }
-
-      .services,
-      .sample-works,
-      .portfolio {
-        grid-template-columns: 1fr;
-      }
-
-      .sample-card,
-      .portfolio-card {
-        max-width: 420px;
+      .sample-card {
         width: 100%;
-        margin: auto;
-      }
-
-      .section h2 {
-        font-size: 34px;
-      }
-
-      .cta {
-        padding: 70px 6%;
+        max-width: 350px;
       }
 
     }
 
-    @media (max-width: 450px) {
+/* =========================================
+   SUBTLE BRAND BACKGROUND DECORATIONS
+   Rea Salve - Warm Neutral Theme
+========================================= */
 
-      .hero-text h1 {
-        font-size: 36px;
-      }
+/* Main sections need to hold decorations */
+.hero,
+.section,
+.cta {
+  position: relative;
+  overflow: hidden;
+}
 
-      .profile {
-        width: 235px;
-        height: 235px;
-      }
+/* -----------------------------------------
+   SOFT BACKGROUND SHAPES
+----------------------------------------- */
 
-      .hero {
-        padding-top: 55px;
-      }
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  background: rgba(221, 195, 153, 0.28);
+  border-radius: 50%;
+  top: -120px;
+  right: -90px;
+  z-index: 0;
+}
 
-      .button {
-        width: 100%;
-      }
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: rgba(190, 162, 130, 0.18);
+  border-radius: 35% 65% 60% 40%;
+  bottom: -70px;
+  left: -50px;
+  transform: rotate(-20deg);
+  z-index: 0;
+}
 
-      .hero-buttons {
-        width: 100%;
-      }
+/* Keep hero content above decorations */
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
 
-    }
+
+/* -----------------------------------------
+   SECTION DECORATIONS
+----------------------------------------- */
+
+.section::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(221, 195, 153, 0.18);
+  border-radius: 50%;
+  top: -65px;
+  left: -55px;
+  z-index: 0;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: rgba(167, 125, 90, 0.08);
+  border-radius: 40% 60% 55% 45%;
+  bottom: -45px;
+  right: -35px;
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+/* Keep section content above decorations */
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* -----------------------------------------
+   SECTION HEADING ACCENT
+----------------------------------------- */
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: var(--light-brown);
+  border-radius: 20px;
+  margin: 18px auto 0;
+}
+
+
+/* -----------------------------------------
+   SERVICES CARDS
+----------------------------------------- */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: rgba(221, 195, 153, 0.16);
+  border-radius: 50%;
+  top: -35px;
+  right: -30px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 35px;
+  background: var(--light-brown);
+  left: 0;
+  top: 35px;
+  border-radius: 0 5px 5px 0;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* -----------------------------------------
+   ICONS
+----------------------------------------- */
+
+.icon {
+  border: 1px solid rgba(167, 125, 90, 0.12);
+  box-shadow: 0 5px 15px rgba(105, 66, 32, 0.06);
+}
+
+
+/* -----------------------------------------
+   SAMPLE PROJECT CARDS
+----------------------------------------- */
+
+.sample-card {
+  position: relative;
+}
+
+.sample-card::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border: 2px solid rgba(167, 125, 90, 0.15);
+  border-radius: 50%;
+  bottom: -28px;
+  right: -20px;
+  pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   CANVA PORTFOLIO CARDS
+----------------------------------------- */
+
+.portfolio-card {
+  position: relative;
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: rgba(221, 195, 153, 0.20);
+  border-radius: 50%;
+  top: -25px;
+  right: -20px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+/* -----------------------------------------
+   ABOUT SECTION
+----------------------------------------- */
+
+.about {
+  position: relative;
+}
+
+.about-highlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-highlight::after {
+  content: "“";
+  position: absolute;
+  right: 20px;
+  bottom: -45px;
+  font-size: 130px;
+  line-height: 1;
+  color: rgba(167, 125, 90, 0.10);
+  font-family: Georgia, serif;
+}
+
+
+/* -----------------------------------------
+   TOOLS
+----------------------------------------- */
+
+.tool {
+  position: relative;
+}
+
+.tool::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--light-brown);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+
+/* -----------------------------------------
+   CTA DECORATIONS
+----------------------------------------- */
+
+.cta::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  top: -150px;
+  left: -80px;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 50%;
+  bottom: -120px;
+  right: -60px;
+}
+
+.cta > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* -----------------------------------------
+   PHOTO DECORATION
+----------------------------------------- */
+
+.hero-photo-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: var(--sand);
+  border-radius: 50%;
+  top: -20px;
+  left: -25px;
+  opacity: 0.45;
+  z-index: 0;
+}
+
+.hero-photo-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 3px solid var(--light-brown);
+  border-radius: 50%;
+  bottom: 5px;
+  left: -35px;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+.hero-photo-wrapper .profile,
+.hero-photo-wrapper .photo-badge {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* -----------------------------------------
+   MOBILE — KEEP DECORATIONS SUBTLE
+----------------------------------------- */
+
+@media (max-width: 800px) {
+
+  .hero::before {
+    width: 220px;
+    height: 220px;
+    top: -90px;
+    right: -80px;
+  }
+
+  .hero::after {
+    width: 120px;
+    height: 120px;
+    bottom: -55px;
+    left: -45px;
+  }
+
+  .section::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section::after {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-photo-wrapper::before {
+    width: 50px;
+    height: 50px;
+  }
+
+}
 
   </style>
 
 </head>
 
-
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
+<!-- HEADER -->
 
 <header>
 
   <div class="logo">
-    Rea Salve <span>Pequit</span>
+    Rea Salve Pequit
   </div>
 
   <nav>
-
     <a href="#services">Services</a>
-
-    <a href="#sample-works">Portfolio</a>
-
+    <a href="#sample-works">Sample Works</a>
+    <a href="#portfolio">Canva</a>
     <a href="#about">About</a>
-
-    <a href="#tools">Tools</a>
-
-    <a href="#contact" class="nav-button">
-      Let's Talk
-    </a>
-
+    <a href="#contact">Contact</a>
   </nav>
 
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
 
   <div class="hero-text">
 
-    <div class="hero-label">
-      VIRTUAL ASSISTANT • DIGITAL CREATIVE
-    </div>
+    <h3>Virtual Assistant • Canva Creator</h3>
 
     <h1>
-      Helping Business Owners
-      <span>Work Smarter.</span>
+      Your Reliable Virtual Assistant & Canva Designer
     </h1>
 
     <p>
-      I provide dependable virtual assistance, administrative support,
-      lead generation, social media support, and Canva design —
-      helping busy entrepreneurs stay organized and focused on what matters most.
+      I help entrepreneurs and small businesses stay organized,
+      manage their tasks, and create beautiful content using Canva.
     </p>
 
-    <div class="hero-buttons">
+    <a href="#contact" class="button">
+      Hire Me
+    </a>
 
-      <a href="#contact" class="button">
-        Let's Work Together →
-      </a>
-
-      <a href="#sample-works" class="button outline-button">
-        View My Work
-      </a>
-
-    </div>
-
-    <div class="hero-note">
-      ✦ Detail-oriented &nbsp; ✦ Creative &nbsp; ✦ Always ready to learn
-    </div>
+    <a href="#portfolio" class="button outline-button">
+      View My Work
+    </a>
 
   </div>
 
 
-  <div class="hero-photo-wrapper">
+  <!-- PROFILE PHOTO -->
 
-    <div class="profile">
+  <div class="profile">
 
-      <img
-        src="profile.jpg"
-        alt="Rea Salve Pequit - Virtual Assistant"
-      >
-
-    </div>
-
-    <div class="photo-badge">
-      💻 VA & Canva Creator
-    </div>
+    <img src="profile.jpg" alt="Rea Salve Pequit">
 
   </div>
 
 </section>
 
 
-<!-- =========================
-     SERVICES
-========================= -->
+<!-- SERVICES -->
 
 <section class="section" id="services">
 
-  <div class="section-heading">
-
-    <div class="section-label">
-      What I Can Help With
-    </div>
-
-    <h2>
-      Virtual Support That Keeps Your Business Moving
-    </h2>
-
-    <p>
-      From everyday administrative tasks to creative content,
-      I can help you save time and stay organized.
-    </p>
-
-  </div>
-
+  <h2>What I Can Do For You</h2>
 
   <div class="services">
 
-
     <div class="card">
 
-      <div class="icon">📋</div>
+      <div class="icon">💻</div>
 
-      <h3>
-        Administrative Support
-      </h3>
+      <h3>Virtual Assistance</h3>
 
       <p>
-        Data entry, file organization, document preparation,
-        spreadsheet management, online research, and other
-        day-to-day administrative tasks.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">🔎</div>
-
-      <h3>
-        Lead Generation
-      </h3>
-
-      <p>
-        Basic lead research, prospect list building,
-        business research, contact information gathering,
-        and organized lead data.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">📧</div>
-
-      <h3>
-        Email & Calendar Support
-      </h3>
-
-      <p>
-        Inbox organization, email support, calendar management,
-        appointment scheduling, and keeping important tasks
-        organized.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">📱</div>
-
-      <h3>
-        Social Media Support
-      </h3>
-
-      <p>
-        Content planning, captions, basic scheduling,
-        content calendars, and social media organization
-        for your business.
+        I provide reliable virtual assistance with data entry,
+        administrative tasks, internet research, file organization,
+        and social media support.
       </p>
 
     </div>
@@ -1119,14 +816,12 @@
 
       <div class="icon">🎨</div>
 
-      <h3>
-        Canva Design
-      </h3>
+      <h3>Canva Design</h3>
 
       <p>
-        Social media graphics, promotional materials,
-        presentations, simple business designs,
-        and branded visual content.
+        I create clean and engaging Canva designs for
+        social media posts, flyers, presentations,
+        promotional materials, and simple business graphics.
       </p>
 
     </div>
@@ -1134,16 +829,13 @@
 
     <div class="card">
 
-      <div class="icon">💡</div>
+      <div class="icon">📱</div>
 
-      <h3>
-        Business Research
-      </h3>
+      <h3>Social Media Support</h3>
 
       <p>
-        Online research, competitor research, information
-        gathering, and organized research reports to help
-        support business decisions.
+        Content creation, captions, scheduling,
+        and basic social media management.
       </p>
 
     </div>
@@ -1153,34 +845,20 @@
 </section>
 
 
-<!-- =========================
-     SAMPLE WORKS
-========================= -->
+<!-- SAMPLE WORKS -->
 
-<section class="section works-section" id="sample-works">
+<section class="section" id="sample-works">
 
-  <div class="section-heading">
+  <h2>My Sample Works</h2>
 
-    <div class="section-label">
-      My Work
-    </div>
-
-    <h2>
-      Sample Projects
-    </h2>
-
-    <p>
-      A few examples of administrative, organizational,
-      social media, and creative work.
-    </p>
-
-  </div>
-
+  <p style="max-width: 650px; margin: -25px auto 40px; color: #666;">
+    Here are some of my virtual assistance, administrative,
+    social media, and creative sample projects.
+  </p>
 
   <div class="sample-works">
 
-
-    <!-- SPREADSHEET -->
+    <!-- CLIENT SPREADSHEET -->
 
     <div class="sample-card">
 
@@ -1195,13 +873,11 @@
 
       <div class="sample-content">
 
-        <h3>
-          📊 Client Spreadsheet
-        </h3>
+        <h3>📊 Client Spreadsheet</h3>
 
         <p>
-          Business spreadsheet sample demonstrating
-          organized data entry, formatting, and
+          Sample business spreadsheet demonstrating
+          data organization, formatting, and accurate
           information management.
         </p>
 
@@ -1232,13 +908,12 @@
 
       <div class="sample-content">
 
-        <h3>
-          📅 Calendar Scheduling
-        </h3>
+        <h3>📅 Calendar Scheduling</h3>
 
         <p>
-          Sample calendar showing organized appointments,
-          meetings, tasks, and scheduled activities.
+          Sample calendar organization showing
+          appointments, tasks, meetings, and
+          scheduled activities.
         </p>
 
         <a
@@ -1253,7 +928,7 @@
     </div>
 
 
-    <!-- SOCIAL MEDIA -->
+    <!-- SOCIAL MEDIA CALENDAR -->
 
     <div class="sample-card">
 
@@ -1261,20 +936,19 @@
 
         <img
           src="social-media-calendar.png"
-          alt="Social Media Content Calendar"
+          alt="Social Media Content Calendar Sample"
         >
 
       </div>
 
       <div class="sample-content">
 
-        <h3>
-          📱 Social Media Calendar
-        </h3>
+        <h3>📱 Social Media Calendar</h3>
 
         <p>
-          Organized content planning sample for posts,
-          captions, content ideas, and publishing schedules.
+          Sample content calendar designed to organize
+          social media posts, captions, content ideas,
+          and publishing schedules.
         </p>
 
         <a
@@ -1289,7 +963,7 @@
     </div>
 
 
-    <!-- CANVA -->
+    <!-- CANVA MOCKUPS -->
 
     <div class="sample-card">
 
@@ -1304,13 +978,12 @@
 
       <div class="sample-content">
 
-        <h3>
-          🎨 Canva Mockups
-        </h3>
+        <h3>🎨 Canva Mockups</h3>
 
         <p>
-          Creative Canva samples demonstrating visual
-          design, presentation, and promotional content.
+          Creative Canva mockups showcasing visual
+          design, presentation, and promotional
+          content creation.
         </p>
 
         <a
@@ -1329,32 +1002,17 @@
 </section>
 
 
-<!-- =========================
-     CANVA PORTFOLIO
-========================= -->
+<!-- CANVA PORTFOLIO -->
 
 <section class="section" id="portfolio">
 
-  <div class="section-heading">
+  <h2>My Canva Portfolio</h2>
 
-    <div class="section-label">
-      Creative Work
-    </div>
-
-    <h2>
-      Canva Design Portfolio
-    </h2>
-
-    <p>
-      Simple, clean, and engaging visual content
-      created for social media, business, and marketing.
-    </p>
-
-  </div>
-
+  <p style="max-width: 650px; margin: -25px auto 40px; color: #666;">
+    Here are some of my Canva designs and creative projects.
+  </p>
 
   <div class="portfolio">
-
 
     <div class="portfolio-card">
 
@@ -1363,17 +1021,16 @@
         <img
           src="canva1.jpg"
           alt="Canva Social Media Design"
+          style="width:100%; height:190px; object-fit:cover;"
         >
 
       </div>
 
-      <h3>
-        Social Media Design
-      </h3>
+      <h3>Social Media Design</h3>
 
       <p>
-        Engaging social media graphics created
-        with Canva.
+        Creative and engaging social media graphics
+        designed using Canva.
       </p>
 
     </div>
@@ -1386,17 +1043,16 @@
         <img
           src="canva2.jpg"
           alt="Canva Business Design"
+          style="width:100%; height:190px; object-fit:cover;"
         >
 
       </div>
 
-      <h3>
-        Business Design
-      </h3>
+      <h3>Business Design</h3>
 
       <p>
-        Professional visual materials for
-        business and marketing use.
+        Professional visual materials created
+        for business and marketing purposes.
       </p>
 
     </div>
@@ -1408,18 +1064,17 @@
 
         <img
           src="canva3.jpg"
-          alt="Canva Marketing Materials"
+          alt="Canva Marketing Design"
+          style="width:100%; height:190px; object-fit:cover;"
         >
 
       </div>
 
-      <h3>
-        Marketing Materials
-      </h3>
+      <h3>Marketing Materials</h3>
 
       <p>
-        Flyers, promotional graphics, and
-        other marketing visuals.
+        Eye-catching flyers, promotional graphics,
+        and other marketing materials.
       </p>
 
     </div>
@@ -1429,100 +1084,50 @@
 </section>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section class="section about" id="about">
 
-  <div class="section-heading">
-
-    <div class="section-label">
-      Get To Know Me
-    </div>
-
-    <h2>
-      A Little About Me
-    </h2>
-
-  </div>
-
+  <h2>About Me</h2>
 
   <div class="about-content">
 
     <p>
 
-      Hi! I'm <strong>Rea Salve Pequit</strong>,
-      a Virtual Assistant and Digital Creative
-      who enjoys helping business owners stay organized,
-      productive, and visible online.
+      Hi! I'm <strong>Rea Salve Pequit</strong>, a Virtual Assistant
+      and Canva Creator.
+
+      I enjoy helping business owners save time,
+      stay organized, and create content that represents
+      their brand professionally.
+
+      I am detail-oriented, creative, and always willing
+      to learn new tools and skills.
 
     </p>
-
-    <br>
-
-    <p>
-
-      My journey started with running my own small business,
-      selling online, creating digital products, and learning
-      how businesses operate in the digital space.
-
-      Today, I'm bringing that experience into the
-      virtual assistance world — combining organization,
-      creativity, and a willingness to keep learning.
-
-    </p>
-
-    <div class="about-highlight">
-
-      “My goal is simple: to make your workload lighter
-      so you can focus more on growing your business.”
-
-    </div>
 
   </div>
 
 </section>
 
 
-<!-- =========================
-     WHY WORK WITH ME
-========================= -->
+<!-- WHY HIRE ME -->
 
-<section class="section why-section">
+<section class="section">
 
-  <div class="section-heading">
-
-    <div class="section-label">
-      Working With Me
-    </div>
-
-    <h2>
-      What You Can Expect
-    </h2>
-
-    <p>
-      I believe good virtual support starts with
-      communication, attention to detail, and consistency.
-    </p>
-
-  </div>
-
+  <h2>Why Hire Me?</h2>
 
   <div class="services">
 
-
     <div class="card">
 
-      <div class="icon">🤝</div>
+      <div class="icon">✅</div>
 
-      <h3>
-        Reliable Support
-      </h3>
+      <h3>Reliable</h3>
 
       <p>
-        I take assigned tasks seriously and aim
-        to provide consistent and dependable support.
+        I take my responsibilities seriously and aim
+        to provide dependable support for every project.
       </p>
 
     </div>
@@ -1532,13 +1137,11 @@
 
       <div class="icon">🎯</div>
 
-      <h3>
-        Detail-Oriented
-      </h3>
+      <h3>Detail-Oriented</h3>
 
       <p>
-        I pay attention to details and organize information
-        carefully to help keep tasks accurate and clear.
+        I pay attention to details and make sure tasks
+        are completed accurately and professionally.
       </p>
 
     </div>
@@ -1546,15 +1149,13 @@
 
     <div class="card">
 
-      <div class="icon">📚</div>
+      <div class="icon">💡</div>
 
-      <h3>
-        Always Learning
-      </h3>
+      <h3>Willing to Learn</h3>
 
       <p>
-        I'm continuously learning new tools, systems,
-        and better ways to support clients and their businesses.
+        I am always open to learning new tools,
+        skills, and better ways to support my clients.
       </p>
 
     </div>
@@ -1564,139 +1165,113 @@
 </section>
 
 
-<!-- =========================
-     TOOLS
-========================= -->
+<!-- TOOLS I USE -->
 
-<section class="section about" id="tools">
+<section class="section about">
 
-  <div class="section-heading">
+  <h2>Tools I Use</h2>
 
-    <div class="section-label">
-      Productivity & Creative Tools
+  <div class="services">
+
+    <div class="card">
+
+      <div class="icon">🎨</div>
+
+      <h3>Canva</h3>
+
+      <p>
+        Creating social media graphics, presentations,
+        flyers, and other visual content.
+      </p>
+
     </div>
 
-    <h2>
-      Tools I Work With
-    </h2>
 
-    <p>
-      Familiar with commonly used tools for
-      administration, organization, research, and design.
-    </p>
+    <div class="card">
 
-  </div>
+      <div class="icon">📄</div>
+
+      <h3>Google Workspace</h3>
+
+      <p>
+        Google Docs, Google Sheets, Google Drive,
+        Gmail, and other productivity tools.
+      </p>
+
+    </div>
 
 
-  <div class="tools">
+    <div class="card">
 
-    <div class="tool">🎨 Canva</div>
+      <div class="icon">💻</div>
 
-    <div class="tool">📄 Google Docs</div>
+      <h3>Microsoft Office</h3>
 
-    <div class="tool">📊 Google Sheets</div>
+      <p>
+        Microsoft Word, Excel, PowerPoint,
+        and other office productivity tools.
+      </p>
 
-    <div class="tool">📁 Google Drive</div>
-
-    <div class="tool">📧 Gmail</div>
-
-    <div class="tool">📅 Google Calendar</div>
-
-    <div class="tool">💻 Microsoft Word</div>
-
-    <div class="tool">📈 Microsoft Excel</div>
-
-    <div class="tool">📊 PowerPoint</div>
-
-    <div class="tool">🔎 Web Research</div>
+    </div>
 
   </div>
 
 </section>
 
 
-<!-- =========================
-     CTA
-========================= -->
+<!-- CONTACT -->
 
-<section class="cta">
+<section class="contact section" id="contact">
 
-  <h2>
-    Ready to Get Some Tasks Off Your Plate?
-  </h2>
+  <h2>Let's Work Together</h2>
 
   <p>
-    Whether you need administrative support,
-    lead research, social media assistance, or Canva design,
-    let's talk about how I can support your business.
+    Have a project or need help with your business?
+    I'd love to hear from you.
   </p>
 
   <a
     href="https://mail.google.com/mail/?view=cm&fs=1&to=reapequit9@gmail.com"
     class="button">
 
-    📩 Let's Work Together
+    📩 Hire Me
 
   </a>
-
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section class="section contact-area" id="contact">
-
-  <div class="section-heading">
-
-    <div class="section-label">
-      Get In Touch
-    </div>
-
-    <h2>
-      Let's Work Together
-    </h2>
-
-    <p>
-      Have a project, task, or business support need?
-      Send me a message and let's connect.
-    </p>
-
-  </div>
 
 
   <form
     action="mailto:reapequit9@gmail.com"
     method="post"
-    enctype="text/plain">
+    enctype="text/plain"
+    style="max-width:600px; margin:35px auto 0; text-align:left;">
 
     <input
       type="text"
       name="Name"
       placeholder="Your Name"
       required
-    >
+      style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
 
     <input
       type="email"
       name="Email"
       placeholder="Your Email"
       required
-    >
+      style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px;">
 
     <textarea
       name="Message"
-      placeholder="Tell me about your project or the support you need..."
+      placeholder="Tell me about your project..."
       rows="6"
       required
-    ></textarea>
+      style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:8px; resize:vertical;"></textarea>
 
     <button
       type="submit"
-      class="button">
+      class="button"
+      style="border:none; cursor:pointer;">
 
-      Send Message →
+      Send Message
 
     </button>
 
@@ -1707,20 +1282,14 @@
 
     <a
       href="https://www.facebook.com/pequitita22"
-      target="_blank"
-      rel="noopener noreferrer">
-
+      target="_blank">
       Facebook
-
     </a>
 
     <a
-      href="https://linkedin.com/in/rea-salve-pequit-aa173b3a7"
-      target="_blank"
-      rel="noopener noreferrer">
-
+      href="https://linkedin.com/in/rea-salve-pequit-aa173b3a7?"
+      target="_blank">
       LinkedIn
-
     </a>
 
   </div>
@@ -1728,14 +1297,12 @@
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
   <p>
-    © 2026 Rea Salve Pequit · Virtual Assistant & Digital Creative
+    © 2026 Rea Salve Pequit. All Rights Reserved.
   </p>
 
 </footer>
