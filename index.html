@@ -125,7 +125,7 @@
       width: 330px;
       height: 330px;
       border-radius: 50%;
-      background: #ddd6fe;
+      background: #e7e2db;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -264,7 +264,7 @@
     /* ABOUT */
 
     .about {
-      background: #faf7ff;
+      background: #f1ece4;
     }
 
     .about-content {
@@ -293,7 +293,7 @@
 
     .portfolio-image {
       height: 190px;
-      background: linear-gradient(135deg, #ddd6fe, #f5d0fe);
+      background: linear-gradient(135deg, #e7e2db, #f5d0fe);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -346,7 +346,7 @@
     footer {
       text-align: center;
       padding: 25px;
-      background: #18181b;
+      background: #694220;
       color: white;
     }
 
@@ -721,6 +721,342 @@
   .hero-photo-wrapper::before {
     width: 50px;
     height: 50px;
+  }
+
+}
+
+/* =========================================
+   LIGHT & ELEGANT BRAND DECORATIONS
+========================================= */
+
+.hero,
+.section,
+.cta {
+  position: relative;
+  overflow: hidden;
+}
+
+/* HERO */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background: rgba(221, 195, 153, 0.28);
+  border-radius: 50%;
+  top: -180px;
+  right: -90px;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: rgba(190, 162, 130, 0.16);
+  border-radius: 55% 45% 65% 35%;
+  bottom: -100px;
+  left: -70px;
+  transform: rotate(25deg);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* HERO LABEL */
+
+.hero-label {
+  background: #eee4d7;
+  border: 1px solid rgba(167, 125, 90, 0.22);
+  box-shadow: 0 5px 15px rgba(105, 66, 32, 0.06);
+}
+
+/* PROFILE DECORATION */
+
+.hero-photo-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #ddc399;
+  border-radius: 50%;
+  top: -30px;
+  left: -35px;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.hero-photo-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border: 4px solid #bea282;
+  border-radius: 50%;
+  bottom: 5px;
+  left: -40px;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* SECTION BACKGROUNDS */
+
+.section {
+  background: #faf8f5;
+}
+
+.section:nth-of-type(even) {
+  background: #f1ece4;
+}
+
+/* SECTION DECORATIONS */
+
+.section::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: rgba(221, 195, 153, 0.22);
+  border-radius: 50%;
+  top: -75px;
+  left: -60px;
+  z-index: 0;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  background: rgba(190, 162, 130, 0.15);
+  border-radius: 45% 55% 60% 40%;
+  right: -40px;
+  bottom: -45px;
+  transform: rotate(25deg);
+  z-index: 0;
+}
+
+.section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* SECTION LABELS */
+
+.section-label {
+  display: inline-block;
+  padding: 7px 16px;
+  background: #eee4d7;
+  border: 1px solid rgba(167, 125, 90, 0.20);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(105, 66, 32, 0.06);
+}
+
+/* HEADING ACCENT */
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #bea282;
+  border-radius: 20px;
+  margin: 18px auto 0;
+}
+
+/* SERVICE CARDS */
+
+.card {
+  border: 1px solid rgba(167, 125, 90, 0.14);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  background: rgba(221, 195, 153, 0.18);
+  border-radius: 50%;
+  top: -40px;
+  right: -30px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background: #bea282;
+  left: 0;
+  top: 35px;
+  border-radius: 0 5px 5px 0;
+}
+
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ICONS */
+
+.icon {
+  background: #eee5da;
+  border: 1px solid rgba(167, 125, 90, 0.15);
+}
+
+/* SAMPLE PROJECTS */
+
+.sample-card {
+  position: relative;
+  border: 1px solid rgba(167, 125, 90, 0.12);
+}
+
+.sample-card::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgba(190, 162, 130, 0.25);
+  border-radius: 50%;
+  right: -25px;
+  bottom: -25px;
+  pointer-events: none;
+}
+
+/* CANVA PORTFOLIO */
+
+.portfolio-card {
+  position: relative;
+  border: 1px solid rgba(167, 125, 90, 0.12);
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: rgba(221, 195, 153, 0.25);
+  border-radius: 50%;
+  top: -30px;
+  right: -20px;
+  z-index: 2;
+}
+
+/* ABOUT */
+
+.about {
+  background: #f0ebe3 !important;
+}
+
+.about-highlight {
+  background: rgba(255, 255, 255, 0.88);
+  border-left: 5px solid #bea282;
+  box-shadow: 0 8px 25px rgba(105, 66, 32, 0.06);
+}
+
+/* TOOLS */
+
+.tool {
+  background: #fffdf9;
+  border: 1px solid rgba(167, 125, 90, 0.18);
+}
+
+.tool::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #a77d5a;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+/* CTA */
+
+.cta {
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(221, 195, 153, 0.25),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(190, 162, 130, 0.20),
+      transparent 25%
+    ),
+    #694220;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  top: -170px;
+  left: -80px;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 2px solid rgba(255, 255, 255, 0.10);
+  border-radius: 50%;
+  bottom: -120px;
+  right: -60px;
+}
+
+.cta > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* DECORATIVE DOTS */
+
+.hero-text::before {
+  content: "•  •  •";
+  position: absolute;
+  color: #bea282;
+  font-size: 22px;
+  letter-spacing: 7px;
+  top: -42px;
+  left: 5px;
+  opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+
+  .hero::before {
+    width: 240px;
+    height: 240px;
+    right: -100px;
+    top: -120px;
+  }
+
+  .section::before {
+    width: 110px;
+    height: 110px;
+    left: -45px;
+  }
+
+  .section::after {
+    width: 85px;
+    height: 85px;
+    right: -35px;
+  }
+
+  .hero-text::before {
+    display: none;
   }
 
 }
